@@ -1,0 +1,39 @@
+<mat-card>
+  <section>
+    <h3>RGB</h3>
+    <div class="color-shower" [style.background]="getColor()"
+           [colorPicker]="getColor()" (colorPickerChange)="onColorPickerChange($event)"
+           [cpDisableInput]="true" [cpAlphaChannel]="'disabled'">
+    </div>
+  </section>
+
+  <section>
+    <mat-slider [min]="0" [max]="255" [step]="1" [value]="RGB.R"
+                (input)="onSliderChange($event, 'R')"></mat-slider>
+    <mat-form-field>
+      <input checkNumber="0 255" matInput type="number"
+             placeholder="R" [min]="0" [max]="255" [value]="RGB.R" (input)="onInputChange($event, 'R')"
+             (change)="onInputChange($event, 'R')">
+    </mat-form-field>
+  </section>
+
+  <section>
+    <mat-slider [min]="0" [max]="255" [step]="1" [value]="RGB.G"
+                (input)="onSliderChange($event, 'G')"></mat-slider>
+    <mat-form-field>
+      <input checkNumber="0 255" matInput type="number"
+             placeholder="G" [min]="0" [max]="255" [value]="RGB.G" (input)="onInputChange($event, 'G')"
+             (change)="onInputChange($event, 'G')">
+    </mat-form-field>
+  </section>
+
+  <section>
+    <mat-slider [min]="0" [max]="255" [step]="1" [value]="RGB.B"
+                (input)="onSliderChange($event, 'B')"></mat-slider>
+    <mat-form-field>
+      <input checkNumber="0 255" matInput type="number"
+             placeholder="B" [min]="0" [max]="255" [value]="RGB.B" (input)="onInputChange($event, 'B')"
+             (change)="onInputChange($event, 'B')">
+    </mat-form-field>
+  </section>
+</mat-card>
