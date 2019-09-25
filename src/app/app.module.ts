@@ -7,16 +7,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CheckNumberDirective} from './directives/checkNumber.directive';
 import {ColorPickerModule} from 'ngx-color-picker';
 import {RgbComponent} from './components/rgb/rgb.component';
-import { XyzComponent } from './components/xyz/xyz.component';
-import { LabComponent } from './components/lab/lab.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CheckNumberDirective,
     RgbComponent,
-    XyzComponent,
-    LabComponent
   ],
   imports: [
     BrowserModule,

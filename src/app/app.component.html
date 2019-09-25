@@ -2,10 +2,4 @@
   <app-rgb [RGB]="RGB"
            (onSlider)="changeColorFromRGB($event)" (onInput)="changeColorFromRGB($event)"
            (onColorPicker)="changeFromColorPicker($event)"></app-rgb>
-  <app-xyz [XYZ]="XYZ" [RGB]="RGB"
-           (onSlider)="changeColorFromXYZ($event)" (onInput)="changeColorFromXYZ($event)"
-           (onColorPicker)="changeFromColorPicker($event)"></app-xyz>
-  <app-lab [RGB]="RGB" [LAB]="LAB"
-           (onSlider)="changeColorFromLAB($event)" (onInput)="changeColorFromLAB($event)"
-           (onColorPicker)="changeFromColorPicker($event)"></app-lab>
 </div>
