@@ -2,4 +2,5 @@
   <app-rgb [RGB]="RGB"
            (onSlider)="changeColorFromRGB($event)" (onInput)="changeColorFromRGB($event)"
            (onColorPicker)="changeFromColorPicker($event)"></app-rgb>
+  <app-info-card [RGB]="RGB" [dataSource]="dataSource" (onAutoTeach)="onAutoTech()" (onTeach)="onTeach($event)"></app-info-card>
 </div>

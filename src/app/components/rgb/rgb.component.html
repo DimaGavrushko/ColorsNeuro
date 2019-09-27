@@ -1,6 +1,5 @@
 <mat-card>
   <section>
-    <h3>RGB</h3>
     <div class="color-shower" [style.background]="getColor()"
            [colorPicker]="getColor()" (colorPickerChange)="onColorPickerChange($event)"
            [cpDisableInput]="true" [cpAlphaChannel]="'disabled'">

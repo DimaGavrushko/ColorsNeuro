@@ -1,0 +1,8 @@
+<mat-card>
+  <section>
+    <app-buttons-section (onAutoTeach)="onAutoTeach.emit()" (onTeach)="onTeach.emit($event)"></app-buttons-section>
+  </section>
+  <section>
+    <app-table-section  [RGB]="RGB" [dataSource]="dataSource"></app-table-section>
+  </section>
+</mat-card>

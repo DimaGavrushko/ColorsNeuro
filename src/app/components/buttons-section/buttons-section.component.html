@@ -1,0 +1,13 @@
+<div class="buttons-container">
+  <mat-form-field>
+    <mat-label>Colors</mat-label>
+    <mat-select value="{{colors[0]}}" #select>
+      <mat-option class="option" *ngFor="let color of colors" [value]="color">
+        {{color}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-button (click)="onTeachClick(select.selected)">Teach</button>
+  <button mat-button (click)="onAutoTeachClick($event)">AutoTeach</button>
+</div>
