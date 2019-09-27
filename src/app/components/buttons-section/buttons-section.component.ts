@@ -19,7 +19,7 @@ export class ButtonsSectionComponent implements OnInit {
   }
 
   onTeachClick(option) {
-    this.onTeach.emit(this.colors.indexOf(option.value) + 1);
+    this.onTeach.emit(this.colors.indexOf(option.value));
   }
 
     onAutoTeachClick(event) {
