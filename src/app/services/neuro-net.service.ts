@@ -42,9 +42,9 @@ export class NeuroNetService {
     COLORS.forEach((color, i) => {
       this.procNeuro(this._mNeuro[i]);
       neuroData.push({
-        wR: this.mNeuro[i].x[0].toFixed(3),
-        wG: this.mNeuro[i].x[1].toFixed(3),
-        wB: this.mNeuro[i].x[2].toFixed(3),
+        wR: this.mNeuro[i].w[0].toFixed(3),
+        wG: this.mNeuro[i].w[1].toFixed(3),
+        wB: this.mNeuro[i].w[2].toFixed(3),
         result: this.mNeuro[i].y.toFixed(3),
         color
       });

@@ -63,7 +63,6 @@ export class AppComponent {
       this.writeInNeuro([R, G, B]);
       this.neuroNetService.teach(this.getTechColor(R, G, B));
     }
-
     this.dataSource = this.neuroNetService.getNeuroData();
   }
 
